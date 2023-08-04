@@ -1,2 +1,1 @@
-# web
-deberes
+# ecommerce-shop-starter
