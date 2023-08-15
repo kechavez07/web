@@ -7,9 +7,14 @@ const Home = () => {
 
   const {products} = useContext(ProductContext);
 
+  // const filteredProducts = products.filter((item) => {
+
+  //   return(item.category === "men's clothing" || item.category === "womwn's clothing"); 
+
+  // });
   const filteredProducts = products.filter((item) => {
 
-    return(item.category === "men's clothing" || item.category === "womwn's clothing"); 
+    return item; 
 
   });
 
