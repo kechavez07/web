@@ -17,6 +17,7 @@ const CartProvider = ({children}) => {
     setTotal(total);
   });
 
+
   useEffect(()=>{
     if(cart){
       const amount = cart.reduce((accumulator,currenItem)=>{
@@ -77,11 +78,11 @@ const CartProvider = ({children}) => {
           }  
       });
       setCart(newCart);
-    }
+    };
     
     if(cartItem.amount < 2){
       removeFromCart(id);
-    }
+    };
     
   };
   return (<CartContext.Provider 
